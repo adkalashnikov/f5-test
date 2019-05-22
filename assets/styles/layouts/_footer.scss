@@ -1,0 +1,109 @@
+.footer {
+  padding: 55px 0 0;
+
+  .col {
+    flex-shrink: 0;
+    min-width: 200px;
+    margin-bottom: 30px;
+    letter-spacing: 0.3px;
+
+    @include media-breakpoint-up(lg) {
+      min-width: auto;
+
+      &.footer__logo-col {
+        min-width: 330px;
+        flex-grow: 0;
+      }
+    }
+
+    @include media-breakpoint-up(xl) {
+      &.footer__logo-col {
+        min-width: 460px;
+      }
+    }
+  }
+
+  &__title {
+    color: #595959;
+    font-family: $secondary-font-family-bold;
+    font-size: rem(17);
+    letter-spacing: 0.34px;
+    margin-bottom: 10px;
+
+    @include media-breakpoint-up(lg) {
+      margin-bottom: 25px;
+    }
+  }
+
+  &__logo-col {
+    width: 100%;
+    display: flex;
+    font-size: rem(15);
+
+    @include media-breakpoint-up(md) {
+      padding-top: 32px;
+    }
+
+    a {
+      flex-shrink: 0;
+      margin-right: 10px;
+
+      @include media-breakpoint-up(xl) {
+        margin-right: 25px;
+      }
+    }
+
+    img {
+      height: 42px;
+      transition: height .3s;
+
+      @include media-breakpoint-up(xl) {
+        height: auto;
+      }
+    }
+  }
+
+  .contact__item {
+    margin-bottom: 10px;
+
+    @include media-breakpoint-up(lg) {
+      margin-bottom: 18px;
+    }
+
+    img {
+      flex-shrink: 0;
+      margin-right: 10px;
+    }
+  }
+
+  .link__item {
+    margin-bottom: 10px;
+
+    @include media-breakpoint-up(lg) {
+      margin-bottom: 18px;
+    }
+  }
+
+  .connect {
+    &__col {
+      @include media-breakpoint-up(lg) {
+        max-width: 170px;
+      }
+    }
+
+    &__item {
+      margin: 5px;
+
+      @include media-breakpoint-up(lg) {
+        margin: 8px 8px 18px 8px;
+      }
+    }
+  }
+
+  &__bottom {
+    color: #b2c1c7;
+    background-color: #0f3e53;
+    padding: 20px 0;
+    font-size: rem(14);
+  }
+}

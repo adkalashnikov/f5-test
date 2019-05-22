@@ -1,0 +1,41 @@
+{
+  "dependencies": {
+    "main.js": {
+      "files": [
+        "scripts/main.js"
+      ],
+      "main": true
+    },
+    "main.css": {
+      "files": [
+        "styles/main.scss"
+      ],
+      "main": true
+    },
+    "customizer.js": {
+      "files": [
+        "scripts/customizer.js"
+      ]
+    },
+    "popper.js": {
+      "bower": ["popper.js"]
+    },
+    "jquery.js": {
+      "bower": [
+        "jquery"
+      ]
+    },
+    "bootstrap.js": {
+      "bower": ["bootstrap"]
+    },
+    "home-page.css": {
+      "files": [
+        "styles/home-page.scss"
+      ],
+      "home-page": true
+    }
+  },
+  "config": {
+    "devUrl": "http://test-sage.loc"
+  }
+}

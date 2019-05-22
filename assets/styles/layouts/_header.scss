@@ -1,0 +1,61 @@
+.header {
+  border-bottom: 1px solid rgba(0,0,0,.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #ffffff;
+  z-index: 99;
+
+  @include media-breakpoint-up(xl) {
+    border-bottom: 0;
+    padding: 10px 0;
+  }
+
+  &__logo {
+    height: 42px;
+    transition: height .3s;
+
+    @include media-breakpoint-up(xl) {
+      height: 123px;
+    }
+  }
+
+  .nav {
+    @include media-breakpoint-up(xl) {
+      padding-left: 10px;
+      width: 85%;
+    }
+  }
+
+  .navbar {
+    padding: 0;
+
+    .navbar-nav {
+      .nav-link {
+        color: #2f2f2f;
+
+        @include media-breakpoint-up(xl) {
+          padding-left: 20px;
+        }
+      }
+    }
+  }
+
+  &__phone {
+    margin-left: auto;
+    margin-right: 15px;
+
+    @include media-breakpoint-up(xl) {
+      margin-right: 0;
+    }
+  }
+
+  &.is-sticky {
+    border-bottom: 1px solid rgba(0,0,0,.1);
+
+    .header__logo {
+      height: 42px;
+    }
+  }
+}

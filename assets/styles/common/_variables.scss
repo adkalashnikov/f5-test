@@ -1,0 +1,21 @@
+// Grid settings
+$enable-flex:           true;
+$main-sm-columns:       12;
+$sidebar-sm-columns:    4;
+$enable-grid-classes:   true;
+
+// Bootstrap vars
+$carousel-indicator-width: 10px;
+$carousel-indicator-height: 10px;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1170px
+) !default;
+
+$font-size: 16px;
+$base-font-family: 'CenturyGothicRegular';
+$secondary-font-family: 'NotoSansRegular';
+$secondary-font-family-bold: 'NotoSansBold';

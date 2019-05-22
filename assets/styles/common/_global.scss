@@ -1,0 +1,35 @@
+body {
+  font-family: $base-font-family;
+  color: #595959;
+  font-size: rem(16);
+  line-height: rem(22);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: #595959;
+  transition: color 0.3s;
+
+  &:hover {
+    color: lighten(#595959, 20%);
+  }
+}
+
+.section {
+  max-width: 1830px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.main {
+  padding-top: 53px;
+  transition: padding .3s;
+
+  @include media-breakpoint-up(xl) {
+    padding-top: 153px;
+  }
+}

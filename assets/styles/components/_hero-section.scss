@@ -1,0 +1,50 @@
+.hero-section {
+  width: 90%;
+  max-width: 923px;
+  box-shadow: 0 4px 43px rgba(192, 192, 192, 0.5);
+  border-radius: 3px;
+  background-color: #ffffff;
+  padding: 25px 50px;
+  margin: 30px auto;
+  transition: margin .3s;
+
+  @include media-breakpoint-up(xl){
+    z-index: 1;
+    position: relative;
+    margin-bottom: -180px;
+    padding-bottom: 42px;
+  }
+
+  &__title {
+    color: #29497d;
+    font-size: rem(30);
+    font-family: $secondary-font-family-bold;
+    line-height: 1;
+    transition: font-size .3s;
+    margin-bottom: 15px;
+
+    @include media-breakpoint-up(xl){
+      font-size: rem(65);
+      margin-bottom: 28px;
+    }
+  }
+
+  &__text {
+    color: #22082c;
+    margin-bottom: 15px;
+
+    @include media-breakpoint-up(xl){
+      font-size: rem(24);
+      margin-bottom: 28px;
+    }
+  }
+
+  .btn {
+    white-space: normal;
+
+    @include media-breakpoint-up(xl){
+      font-size: rem(18);
+      padding: 15px 25px;
+    }
+  }
+}

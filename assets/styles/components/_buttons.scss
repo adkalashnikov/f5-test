@@ -1,0 +1,29 @@
+.btn {
+  display: inline-flex;
+  border-radius: 19px;
+  padding: 8px 26px;
+  background: linear-gradient(-234deg, #fdb247 0%, #fe9055 100%);
+  color: #ffffff;
+  align-items: center;
+  line-height: 1;
+  text-decoration: none;
+  transition: all .3s linear;
+
+
+  @include media-breakpoint-up(md) {
+    padding: 12px 46px;
+  }
+
+  &:hover {
+    opacity: .8;
+    color: #ffffff;
+  }
+
+  .sprite {
+    margin-right: 10px;
+  }
+
+  &.primary {
+    background-image: linear-gradient(-234deg, #63c6f7 0%, #5ca1e5 100%);
+  }
+}
